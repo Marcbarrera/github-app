@@ -1,0 +1,12 @@
+
+
+
+ <div *ngFor="let gi of items"> 
+        <h4>{{gi.login}}</h4>
+        <h4>{{gi.name}}</h4>
+        <img src="{{gi.avatar_url}}" alt="{{gi.login}}">
+        <p>{{gi.score}}</p>
+        <button (click)="veruser(gi.login)" >Details</button>
+    </div>
+
+       
