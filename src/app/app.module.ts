@@ -6,7 +6,6 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
@@ -16,7 +15,6 @@ import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     SearchComponent,
     DetailComponent,
     NavbarComponent,

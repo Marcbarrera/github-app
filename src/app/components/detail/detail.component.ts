@@ -6,9 +6,11 @@ import { GithubService } from  '../../services/github.service';
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
-  styles: []
+  styles: ['./detail.componeny.scss']
 })
 export class DetailComponent  {
+
+  user: any = {};
 
   constructor(private router: ActivatedRoute,
                private github: GithubService ) {
@@ -23,6 +25,7 @@ export class DetailComponent  {
     this.github.getdetailuser (login)
           .subscribe (user => {
             console.log(user);
+            this.user=user;
           });
    }
 

@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color:black;
+    height:60px;
+    color:white;
+    display:flex;
+    align-items: center;
+    
+    ul { 
+        display:flex;
+        flex-direction: row;
+        
+        li {
+            list-style-type: none;
+            min-width: 100px;
+            padding: 15px;
+            a {
+                color:white;
+                text-decoration:none;
+                font-size: 20px;
+            }
+            
+        }
+            
+    }
+}
+
+.search-wrapper {
+    background-color: white;
+    height:200px;
+    display: flex;
+    max-width:960px;
+    margin:auto;
+    margin-bottom: -70px;
+
+
+    .search-box{
+        max-width:960px;
+        height:100px;
+        
+
+                input{
+                width: 760px;
+                margin-top:20px;
+                height:40px;
+                padding-left:20px;
+                font-size:15px;
+                    
+                }
+                ::placeholder{
+                    font-size: 15px;
+                }
+    }
+}
+
+.cards-container{
+    max-width:1140px;
+    margin-top:-600px;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:20px;
+    
+    .card{
+        justify-content: center;
+        width:25%;
+        margin-bottom: 20px;
+
+        img{
+            width:85%;
+        }
+    }
+}

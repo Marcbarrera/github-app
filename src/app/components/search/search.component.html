@@ -1,10 +1,11 @@
-<div class="row">
-    <div class="col">
+
+
+<div class="search-wrapper">
+    <div class="search-box">
         <input #termino type="text" (keyup)="buscar(termino.value)" class="form-control" placeholder="Search for user">
     </div>
 </div>
 
-    
 <app-tarjetas [items]="artistas"></app-tarjetas>
 
        
