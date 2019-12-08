@@ -11,6 +11,8 @@ import { DetailComponent } from './components/detail/detail.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { ROUTES } from './app.routes';
 import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { LoadingComponent } from './components/share/loading/loading.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
     DetailComponent,
     NavbarComponent,
     TarjetasComponent,
+    LoadingComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,12 @@
 
 <div class="wrapper"> 
-    <aside>
-         <img src="{{user.avatar_url}}" alt="{{user.login}}">
-         <h3>{{user.name}}</h3>
-         <h4>username: {{user.login}}</h4>
-    </aside>
-    <main>
-
-    </main>
-        
-        
+            <img src="{{user.avatar_url}}" alt="{{user.login}}">
+            <div class="user_details">
+                <h3>{{user.name}}</h3>
+                <h4>{{user.login}}</h4>
+                <p>followers  {{user.followers}}</p>
+                <p>following  {{user.following}}</p>
+                <p>repos  {{user.public_repos}}</p>
+                <p><a href="http://github.com/{{user.login}}">link to github</a></p>
+            </div>
 </div>

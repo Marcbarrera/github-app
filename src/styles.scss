@@ -30,6 +30,14 @@ nav {
     }
 }
 
+.info{
+    display: flex;
+    max-width:700px;
+    margin:auto;
+    margin-top:50px;
+    font-size:20px;
+}
+
 .search-wrapper {
     background-color: white;
     height:200px;
@@ -45,7 +53,7 @@ nav {
         
 
                 input{
-                width: 760px;
+                width: 860px;
                 margin-top:20px;
                 height:40px;
                 padding-left:20px;
@@ -56,6 +64,7 @@ nav {
                     font-size: 15px;
                 }
     }
+    
 }
 
 .cards-container{
@@ -77,4 +86,236 @@ nav {
             width:85%;
         }
     }
+}
+
+.wrapper {
+
+    max-width: 960px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+
+
+    img {
+    width:40%;
+    align-self: center;
+    margin-top: 30px;
+    } 
+
+    .user_details{
+        display: flex;
+        flex-direction: column;
+        padding-top:100px;
+        padding-left:20px;
+        width:20%;
+
+        h3 {
+            font-size: 25px;
+
+        }
+        h4 {
+            font-size: 20px;
+            color:grey;
+            padding-bottom:30px;
+        }
+        a{
+            text-decoration: none;
+            color:blue;
+        }
+    }
+
+}
+
+.loading {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+
+    h2{
+        margin-bottom:20px;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  
+
+.search-wrapper {
+    height:100px;
+    display: flex;
+    max-width:960px;
+    margin:auto;
+    margin-bottom: 10px;
+    
+    .search-box{
+        width:600px;
+        height:100px;
+        margin-left:30px;
+        
+                input{
+                width: 600px;
+                margin-top:20px;
+                height:40px;
+                padding-left:80px;
+                font-size:15px;
+                    
+                }
+                ::placeholder{
+                    font-size: 15px;
+                }
+    }
+    
+}
+
+.cards-container{
+    margin-left:20px;
+}
+
+.wrapper {
+
+    max-width: 960px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+
+
+    img {
+    width:40%;
+    align-self: center;
+    margin: 30px;
+    } 
+
+    .user_details{
+        display: flex;
+        flex-direction: column;
+        padding-top:100px;
+        padding-left:20px;
+        width:25%;
+
+        h3 {
+            font-size: 25px;
+
+        }
+        h4 {
+            font-size: 20px;
+            color:grey;
+        }
+   
+        
+}
+}
+}
+
+
+
+
+/* Portrait and Landscape */
+@media only screen 
+  and (max-device-width: 414px) 
+ { 
+
+    .info {
+        display: flex;
+        max-width:700px;
+        margin:auto;
+        margin-top:10px;
+        font-size:15px;
+        padding:20px;
+    }
+
+
+
+    .search-wrapper {
+        height:100px;
+        display: flex;
+        max-width:375px;
+        margin:auto;
+        margin-bottom: 10px;
+        
+        .search-box{
+            width:200px;
+            height:100px;
+            margin-left:30px;
+            
+                    input{
+                    width: 200px;
+                    margin-top:20px;
+                    height:40px;
+                    padding-left:80px;
+                    font-size:15px;
+                        
+                    }
+                    ::placeholder{
+                        font-size: 15px;
+                    }
+        }
+        
+    }
+
+
+.cards-container{
+    max-width:340px;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:20px;
+    margin-left:20px;
+    
+    .card{
+        justify-content: center;
+        width:50%;
+
+        img{
+            width:85%;
+        }
+    }
+}
+
+.wrapper {
+
+    max-width: 960px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+
+
+    img {
+    width:80%;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom:-50px;
+    } 
+
+    .user_details{
+        display: flex;
+        flex-direction: column;
+        padding-left:40px;
+        width:90%;
+
+        h3 {
+            font-size: 25px;
+
+        }
+        h4 {
+            font-size: 20px;
+            color:grey;
+        }
+        a{
+            text-decoration: none;
+            color:blue;
+        }
+    }
+
+}
+
 }
